@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Divider from '@material-ui/core/Divider';
 import { Router } from 'react-router-dom';
 import Footer from './components/footer';
 import NavBar from './components/navbar';
@@ -15,6 +16,7 @@ class App extends Component {
             <CssBaseline/>
             <NavBar/>
             <Routes/>
+            <Divider variant="middle" style={{color: 'black'}}/>
             <Footer/>
           </React.Fragment>
         </Router>
