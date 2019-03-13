@@ -94,7 +94,7 @@ class NavBar extends Component {
                             )}
                         </Popper>
                     </div>
-                    <Button onClick={() => history.push('/business-partner')}>Business Partner</Button>
+                    <Button onClick={() => history.push('/business-partners')}>Business Partners</Button>
                     <Button onClick={() => history.push('/news')}>News</Button>
                     <Button onClick={() => history.push('/contact-us')}>Contact Us</Button>
                 </Toolbar>
