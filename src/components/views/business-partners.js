@@ -35,11 +35,13 @@ class BusinessPartners extends Component {
         return(
             <React.Fragment>
                 <Hero heroImg={BPImg} title="Business Partners"/>
-                {partners.map((n, i) => {
-                    return (
-                        <BusinessPartnerCard img={n.img} hint={n.hint} title={n.title} address={n.address} key={i}/>
-                    )
-                })}
+                <div style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', width:'40%', paddingTop: '2%', paddingBottom: '2%'}}>
+                    {partners.map((n, i) => {
+                        return (
+                            <BusinessPartnerCard img={n.img} hint={n.hint} title={n.title} address={n.address} key={i}/>
+                        )
+                    })}
+                </div>
             </React.Fragment>
         );
     }

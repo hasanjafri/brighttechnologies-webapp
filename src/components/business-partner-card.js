@@ -17,6 +17,7 @@ const styles = {
     },
     media: {
         height: 140,
+        backgroundSize: 'contain'
     }
 }
 
