@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import BusinessPartners from './views/business-partners';
 import ContactUs from './views/contact-us';
 import Home from './views/home';
+import Jobs from './views/jobs';
 import News from './views/news';
 
 const Routes = () => {
@@ -13,6 +14,7 @@ const Routes = () => {
             <Route path="/business-partners" exact component={BusinessPartners}/>
             <Route path="/contact-us" exact component={ContactUs}/>
             <Route path="/news" exact component={News}/>
+            <Route path="/jobs" exact component={Jobs}/>
         </Switch>
     )
 }

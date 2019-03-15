@@ -84,16 +84,16 @@ class NavBar extends Component {
                                 <Paper>
                                 <ClickAwayListener onClickAway={this.handleClose}>
                                     <MenuList>
-                                        <MenuItem onClick={() => history.push('/services/staffing')}>Staffing</MenuItem>
-                                        <MenuItem onClick={() => history.push('/services/consultancy')}>BI Consultancy</MenuItem>
-                                        <MenuItem onClick={() => history.push('/services/software')}>Software Solution</MenuItem>
-                                    </MenuList>
+                                        <MenuItem onClick={() =>  {this.setState({open: false}); history.push('/services/staffing');}}>Staffing</MenuItem>
+                                        <MenuItem onClick={() =>  {this.setState({open: false}); history.push('/services/bi-consultancy');}}>BI Consultancy</MenuItem>
+                                        <MenuItem onClick={() =>  {this.setState({open: false}); history.push('/services/software-solution');}}>Software Solution</MenuItem>                                    </MenuList>
                                 </ClickAwayListener>
                                 </Paper>
                             </Grow>
                             )}
                         </Popper>
                     </div>
+                    <Button onClick={() => history.push('/jobs')}>Browse Jobs</Button>
                     <Button onClick={() => history.push('/business-partners')}>Business Partners</Button>
                     <Button onClick={() => history.push('/news')}>News</Button>
                     <Button onClick={() => history.push('/contact-us')}>Contact Us</Button>
