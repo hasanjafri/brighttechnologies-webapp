@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import BiConsultancy from './views/bi-consultancy';
 import BusinessPartners from './views/business-partners';
 import ContactUs from './views/contact-us';
 import Home from './views/home';
@@ -17,6 +18,7 @@ const Routes = () => {
             <Route path="/news" exact component={News}/>
             <Route path="/jobs" exact component={Jobs}/>
             <Route path="/services/staffing" exact component={Staffing}/>
+            <Route path="/services/bi-consultancy" exact component={BiConsultancy}/>
         </Switch>
     )
 }
