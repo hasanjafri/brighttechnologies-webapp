@@ -7,7 +7,7 @@ import ContactUs from './views/contact-us';
 import Home from './views/home';
 import Jobs from './views/jobs';
 import News from './views/news';
-import SoftwareSolution from './views/software-solution';
+// import SoftwareSolution from './views/software-solution';
 import Staffing from './views/staffing';
 
 const Routes = () => {
@@ -20,7 +20,7 @@ const Routes = () => {
             <Route path="/jobs" exact component={Jobs}/>
             <Route path="/services/staffing" exact component={Staffing}/>
             <Route path="/services/bi-consultancy" exact component={BiConsultancy}/>
-            <Route path="/services/software-solution" exact component={SoftwareSolution}/>
+            {/* <Route path="/services/software-solution" exact component={SoftwareSolution}/> */}
         </Switch>
     )
 }
